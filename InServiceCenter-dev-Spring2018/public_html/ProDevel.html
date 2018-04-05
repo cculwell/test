@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Professional Development Opportunities</title>
+
+  <!-- Captcha requirements -->
+  <script src="../resources/library/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../resources/library/realperson-2.0.1/jquery.realperson.css">
+  <script type="text/javascript" src="../resources/library/realperson-2.0.1/jquery.plugin.js"></script>
+  <script type="text/javascript" src="../resources/library/realperson-2.0.1/jquery.realperson.js"></script>
+
+
+  <link rel="stylesheet" href="css/foundation.min.css">
+  <link rel="stylesheet" href="css/Common.css" />
+  <link rel="stylesheet" href="css/ProDevel.css" />
+</head>
+
+<body>
+  <div id="thebigone">
+
+    <div class="grid-container">
+      <!-- Start Top Bar  -->
+      <div id="main-nav" class="top-bar">
+        <div class="top-bar-left">
+          <span class="title-bar-title">Athens-AMSTI</span>
+        </div>
+      </div>
+      <!-- End Top Bar -->
+
+      <!-- Side Menu -->
+      <ul id=menu>
+        <li>
+          <a href="Home.html" target="_self">Home</a>
+        </li>
+        <li>
+          <a href="AboutUs.html" target="_self">AMSTI</a>
+        </li>
+        <li>
+          <a href="ARI.html" target="_self">ARI</a>
+        </li>
+        <li>
+          <a href="ASIM.html" target="_self">ASIM</a>
+        </li>
+        <li>
+          <a href="TIM.html" target="_self">TIM</a>
+        </li>
+        <li>
+          <a href="GoverningBoard.html" target="_self">Board</a>
+        </li>
+        <li>
+          <a href="Inservice.html" target="_self">Inservice</a>
+        </li>
+        <li class="current">
+          <a href="ProDevel.html" target="_self">Professional Development</a>
+        </li>
+        <li>
+          <a href="NewRequest.php" target="_blank">Forms</a>
+        </li>
+        <li>
+          <a href="calendar.html" target="_self">Calendar</a>
+        </li>
+        <li>
+          <a href="ReservationRequest.html" target="_blank">Reservation</a>
+        </li>
+      </ul>
+      <!-- Mobile Menu -->
+      <ul id=mobile>
+        <li>
+          <a href="Home.html" target="_self">Home</a>
+        </li>
+        <li>
+          <a href="AboutUs.html" target="_self">AMSTI</a>
+        </li>
+        <li>
+          <a href="ARI.html" target="_self">ARI</a>
+        </li>
+        <li>
+          <a href="ASIM.html" target="_self">ASIM</a>
+        </li>
+        <li>
+          <a href="TIM.html" target="_self">TIM</a>
+        </li>
+        <li>
+          <a href="GoverningBoard.html" target="_self">Board</a>
+        </li>
+        <li>
+          <a href="Inservice.html" target="_self">Inservice</a>
+        </li>
+        <li class="current">
+          <a href="ProDevel.html" target="_self">Professional Development</a>
+        </li>
+        <li>
+          <a href="NewRequest.php" target="_blank">Forms</a>
+        </li>
+        <li>
+          <a href="calendar.html" target="_self">Calendar</a>
+        </li>
+        <li>
+          <a href="ReservationRequest.html" target="_blank">Reservation</a>
+        </li>
+      </ul>
+
+      <div class="logo_container">
+        <img class="logo" src="img/Logo.jpg" alt="" />
+      </div>
+
+      <div class="page_container">
+
+        <h3>View Our Latest Newsletter</h3>
+        <br>
+        <button id="view_newsletter_button" onclick="location.href='php/view_current.php?table=newsletters&page=ProDevel'" class="button">View Our Current Newsletter</button>
+        <p>OR</p>
+        <button id="subscribe_button" class="button">Subscribe to Our Newsletter</button>
+
+        <div id="subscribe_box">
+          <div class="subscribe_box_container">
+            <h3>Subscribe</h3>
+            <p>
+              If you would like to subscribe to our newsletter, enter your E-mail address below and click the "Subscribe" button.
+            </p>
+            <input id="subscribe_email_address" class="line_edit" type="email" name="subscribe_email" placeholder="name@example.com"
+              required>
+            <div class="captcha_container">
+              <input type="text" id="captcha" name="captcha">
+              <!-- Captcha -->
+            </div>
+            <button id="subscribe_confirm_button" class="button">Subscribe</button>
+            <button id="subscribe_cancel_button" class="button">Cancel</button>
+            <br>
+            <br>
+            <button id="unsubscribe_button" class="link_button">Unsubscribe</button>
+          </div>
+        </div>
+
+        <div id="unsubscribe_box">
+          <div class="unsubscribe_box_container">
+            <h3>Unsubscribe</h3>
+            <p>
+              We're sorry to see you go. To unsubscribe, enter you E-mail address below and click "Unsubscribe."
+            </p>
+            <input id="unsubscribe_email_address" class="line_edit" type="email" name="unsubscribe_email" placeholder="name@example.com"
+              required>
+            <div class="captcha_container">
+              <input type="text" id="unsubscribe_captcha" name="unsubscribe_captcha">
+              <!-- Captcha -->
+            </div>
+            <button id="unsubscribe_confirm_button" class="button">Unsubscribe</button>
+            <button id="unsubscribe_cancel_button" class="button">Cancel</button>
+            <br>
+            <br>
+          </div>
+        </div>
+
+        <div id="success_box">
+          <div class="success_box_container">
+            <h3>Success!</h3>
+            <img src="img/success.png">
+            <p id="success_text" class="status_text">""</p>
+            <br>
+            <br>
+            <!--Test gets replaced with message -->
+            <button id="ok_success" class="button">OK</button>
+          </div>
+        </div>
+
+        <div id="error_box">
+          <div class="error_box_container">
+            <h3>We're Sorry...</h3>
+            <img src="img/failure.png">
+            <p id="error_text" class="status_text">""</p>
+            <br>
+            <br>
+            <!--Test gets replaced with message -->
+            <button id="ok_error" class="button">OK</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer">
+        <div id="directions">
+          <form id="addressinput" action="http://maps.google.com/maps" method="get" target="_blank">
+            <input id="start" name="saddr" type="text" placeholder="Enter your location for directions" />
+            <input name="daddr" type="hidden" value="AMSTI--Athens State University RISC" />
+            <input type="submit" value="Get directions" />
+            <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+          </form>
+        </div>
+        <p id="info">Athens AMSTI &copy;
+          <script>document.write(new Date().getFullYear())</script> </p>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src=js/SubscribeBox.js></script>
+  <script type="text/javascript" src=js/EmailSubmit.js></script>
+  <script type="text/javascript" src=js/captcha.js></script>
+
+</body>

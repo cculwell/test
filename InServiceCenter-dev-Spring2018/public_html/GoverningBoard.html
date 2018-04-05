@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Governing Board | AMSTI</title>
+
+  <link rel="stylesheet" href="css/foundation.min.css">
+  <link rel="stylesheet" href="css/GoverningBoard.css">
+  <link rel="stylesheet" href="css/Common.css">
+</head>
+
+<body>
+  <div id="thebigone">
+    <div class="grid-container">
+      <!-- Side Menu -->
+      <ul id=menu>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="AboutUs.html">AMSTI</a></li>
+        <li><a href="ARI.html">ARI</a></li>
+        <li><a href="ASIM.html">ASIM</a></li>
+        <li><a href="TIM.html">TIM</a></li>
+        <li class="current"><a href="GoverningBoard.html">Board</a></li>
+        <li><a href="Inservice.html">Inservice</a></li>
+        <li><a href="ProDevel.html">Professional Development</a></li>
+        <li><a href="NewRequest.php">Forms</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="ReservationRequest.html">Reservation</a></li>
+      </ul>
+      <!-- Mobile Menu -->
+      <ul id=mobile>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="AboutUs.html">AMSTI</a></li>
+        <li><a href="ARI.html">ARI</a></li>
+        <li><a href="ASIM.html">ASIM</a></li>
+        <li><a href="TIM.html">TIM</a></li>
+        <li class="current"><a href="GoverningBoard.html">Board</a></li>
+        <li><a href="Inservice.html">Inservice</a></li>
+        <li><a href="ProDevel.html">Professional Development</a></li>
+        <li><a href="NewRequest.php">Forms</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="ReservationRequest.html">Reservation</a></li>
+      </ul>
+
+      <div class="logo_container large">
+        <img class="logo" src="img/Logo.jpg" alt="" />
+      </div>
+
+      <div class="page_container">
+        <h3>ASRIC Governing Board Information</h3>
+        <p>The Athens State Regional In-Service Center&rsquo;s governing board is comprised of eight classroom teachers, four
+          administrators, two higher education representatives, one school board member from one of our 10 systems, and an
+          Alabama State Department Representative.
+          <br>
+          <br> Interested in serving the board and assisting with selecting professional development policies, and helping choose
+          the path our Regional In-Service Center is taking? Contact us!
+          <br>
+          <br>
+          <!-- CONTACT US LINKS TO EMAIL -->
+
+          We are filling the following vacancies on the board before the beginning of the 2017-2018 school year: two teachers, large
+          system; and an administrator and teacher, small system.
+        </p>
+
+        <h3>List​ ​of​ ​Active​ ​Governing​ ​Board​ ​Members</h3>
+        <br>
+        <div class="button-container">
+          <button id="view_bylaws_button" onclick="location.href='php/view_current.php?table=bylaws&page=GoverningBoard'" class="button">View Our Current Bylaws</button>
+        </div>
+
+        <div class="grid-x grid-padding-x align-center text-center board_member_container">
+          <div class="cell large-4 medium-6">
+            <strong>Dr. Dee Dee Jones</strong>
+            <p>Central Office
+              <br> Hartselle City Schools
+              <br> Chair for 2017-2018 School Year
+            </p>
+          </div>
+
+          <div class="cell large-4 medium-6">
+            <strong>Stacy Hughes</strong>
+            <p>Falkville High School
+              <br> Morgan County Schools
+              <br> Vice-Chair for 2017-2018 School Year
+            </p>
+          </div>
+
+          <div class="cell large-4 medium-6">
+            <strong>Dawn Martin</strong>
+            <p>East Limestone High School
+              <br> Limestone County Schools
+            </p>
+          </div>
+
+          <div class="cell large-4 medium-6">
+            <strong>Kelly Pinkard</strong>
+            <p>Cullman Primary School
+              <br> Cullman City Schools
+            </p>
+          </div>
+
+          <div class="cell large-4 medium-6">
+            <strong>Elisa Harris</strong>
+            <p>Crestline Elementary
+              <br> Hartselle City Schools
+            </p>
+          </div>
+
+          <div class="cell large-4 medium-6">
+            <strong>Pam Kitchens Crumpton</strong>
+            <p>Moulton Middle School
+              <br> Lawrence County Schools
+            </p>
+          </div>
+
+          <div class="cell large-4 medium-6">
+            <strong>Karen Pinion</strong>
+            <p>West Point Intermediate School
+              <br> Cullman City Schools
+            </p>
+          </div>
+
+          <div class="cell large-4 medium-6">
+            <strong>Dr. Cheri Humphries</strong>
+            <p>Central Office
+              <br> Morgan County Schools
+            </p>
+          </div>
+
+          <div class="cell large-4 medium-6">
+            <strong>James Lucas</strong>
+            <p>Athens City Schools
+              <br> School Board Member
+            </p>
+          </div>
+
+          <div class="cell large-4 medium-6">
+            <strong>Dr. Sara Cline</strong>
+            <p>Athens State University
+              <br> College of Arts and Sciences
+            </p>
+          </div>
+
+          <div class="cell large-4 medium-6">
+            <strong>Dr. Johnnie Lundin</strong>
+            <p>Athens State University
+              <br> College of Education
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div id="directions">
+          <form id="addressinput" action="http://maps.google.com/maps" method="get" target="_blank">
+            <input id="start" name="saddr" type="text" placeholder="Enter your location for directions" />
+            <input name="daddr" type="hidden" value="AMSTI--Athens State University RISC" />
+            <input type="submit" value="Get directions" />
+            <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+          </form>
+        </div>
+        <p id="info">Athens AMSTI &copy;
+          <script>document.write(new Date().getFullYear())</script> </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

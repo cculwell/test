@@ -1,0 +1,64 @@
+#report-name-placeholder
+{
+    font-weight: bold;
+    text-align: center;
+}
+
+#term-placeholder
+{
+    font-style: italic;
+    text-align: center;
+    font-size: 17px;
+}
+
+div.dataTables_wrapper #detailed_report_table
+{
+    width: 1750px;
+    margin: 0 auto;
+}
+
+div.dataTables_wrapper #quick_report_table
+{
+    width: 960px;
+    margin: 0 auto;
+}
+
+div.dataTables_wrapper #financial_report_table
+{
+    width: 1470px;
+    margin: 0 auto;
+}
+
+div.dataTables_wrapper #curriculum_report_table
+{
+    width: 1050px;
+    margin: 0 auto;
+}
+
+div.dataTables_wrapper #initiative_report_table
+{
+    width: 6800px;
+    margin: 0 auto;
+}
+
+div.dataTables_wrapper #school_and_system_report_table
+{
+    width: 1250px;
+    margin: 0 auto;
+}
+
+th, 
+td 
+{ 
+    white-space: nowrap; 
+}
+
+div.dataTables_wrapper 
+{
+    margin: 0 auto;
+}
+
+#expenses_table th tr td
+{
+    text-align: left;
+}

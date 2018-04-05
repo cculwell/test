@@ -1,0 +1,32 @@
+.dataTable {
+    display:block;
+}
+.dataTable tr td {
+    height:20px;
+}
+
+.panel-body {
+    background:#dcdcdc;}
+
+.top-buffer { margin-top:20px; }
+
+label {
+    font-size: smaller;
+}
+
+input {
+    font-size: smaller;
+}
+
+select {
+    font-size: smaller;
+}
+
+option {
+    font-size: smaller;
+}
+
+.ui-widget
+{
+    font-size: 80%;
+}

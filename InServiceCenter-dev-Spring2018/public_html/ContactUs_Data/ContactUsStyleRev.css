@@ -1,0 +1,39 @@
+
+/* CSS code for the custom fonts */
+
+@font-face
+{
+    font-family: 'BrushScript';
+    src: url('BrushScript.ttf');
+}
+
+/**************************************/
+
+
+
+
+.site-pictures {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.h2-text
+{
+    font-family: brushscript;
+   
+}
+
+.font
+{
+    height: 5em;
+   
+}
+
+.font p
+{
+    font-family: BrushScript;
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: 100;
+}
+

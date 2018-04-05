@@ -1,0 +1,59 @@
+div.dataTables_wrapper #subscribers_table
+{
+    width: 800px;
+    margin: 0 auto;
+}
+
+div.dataTables_wrapper #bylaw_table
+{
+    width: 800px;
+    margin: 0 auto;
+}
+
+div.dataTables_wrapper #newsletter_table
+{
+    width: 800px;
+    margin: 0 auto;
+}
+
+#subject_text_edit,
+#message_text_edit
+{
+    border-width: 2px;
+    border-style: inset;
+    border-style: solid;
+    border-top-color: #9a9a9a;
+    border-left-color: #9a9a9a;
+    border-right-color: #eeeeee;
+    border-bottom-color: #eeeeee;
+}
+
+form input.text {
+    width:95%; 
+    font-size:16px;
+    text-align: left;
+}
+
+form textarea {
+    width:95%; 
+    height:100%;
+    text-align: left;
+    vertical-align: top;
+    align-content:center;
+    box-sizing: border-box;
+}
+
+/*#subscribers_table,
+#bylaw_table,
+#newsletter_table
+th td
+{
+    text-align: center;
+}*/
+
+hr {
+    border: none;
+    height: 1px;
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}

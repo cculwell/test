@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8"/>
+    
+            <title>General Request</title>
+    
+        <link rel="stylesheet" href="css/GeneralStyle.css" />
+    </head>
+    
+<body> 
+    
+    <div id = "toplogo">    
+    <img src="img/Logo.jpg" alt ="AthensLogo">
+    </div>   
+
+<div id = "formcontainer">
+    <h3>General Request</h3>
+    <h3>Please Complete All Fields Before Submission</h3>
+
+    <form action="php/GeneralRequest.php">
+      
+    <label for="school">School</label>
+    <input type="text" id="school" name="school" required>
+
+    <label for="systm">System</label>
+    <input type="text" id="systm" name="system" required>
+      
+    <label for="request">Request</label>
+    <textarea id="request" name="request"  rows="5" cols="122" required></textarea>
+      
+    <label for="needarea">Need Area Addressed/Justification</label>
+    <textarea id="needarea" name="needarea"  rows="5" cols="122" required></textarea> 
+      
+    <label for="date">Date(s)</label>
+    <input type="text" id="date" name="dates" placeholder="MM/DD/YYYY, MM/DD/YYYY" required>
+      
+    <label for="time">Time(s)</label>
+    <input type="text" id="time" name="times" placeholder="HH:MM AM/PM, HH:MM AM/PM" required>
+      
+    <label for="loc">Location</label>
+    <input type="text" id="loc" name="location" required>      
+        
+    <label for="tothours">Total Hours</label>
+    <input type="number" id="tothours" name="totalhours" required>
+      
+    <label for="targetp">Target Participant</label>
+    <input type="text" id="targetp" name="targetparticipant" required>
+      
+    <label for="nump">Number Participating</label>
+    <input type="number" id="nump" name="numberpart" required>
+            
+    <label for="eval">Method of Evaluation</label> 
+    <input type="text" id="eval" name="evalmethod" required>       
+          
+    <label for="cop">Company/Organization/Publisher</label>
+    <input type="text" id="cop" name="copublisher" required>
+                      
+    <label for="cnct">Contact Info for Company/Organization</label>
+    <input type="text" id="cnct" name="contact" required>  
+          
+    <label for="amtreq">Dollar Amount of Support Requested</label>
+    <input type="text" id="amtreq" name="amtrequested"  required>
+      
+    <label for="contact">Contact Person</label>
+    <input type="text" id="contact" name="contactperson"  required>
+      
+    <label for="phn">Phone Number</label>
+    <input type="tel" id="phn" name="Phone" placeholder="(555) 555-5555" required>
+      
+    <label for="eml">Email</label>
+    <input type="email" id="eml" name="email" placeholder="name@example.com" required>    
+        
+      <hr>
+       <label for="agree">  
+      <h2>I understand that this is a request only and does not guarantee an approved
+          reservation. The status of my request will be emailed to me once availability is determined. By submitting this document, I/We hereby agree to the Terms and Conditions Listed. <input type="checkbox" id = "agree" name="accept" value="accept" required> </h2>           
+      </label>  
+  
+    <input type="submit" value="Submit">  
+    </form>    
+</div>
+</body>   
+</html>

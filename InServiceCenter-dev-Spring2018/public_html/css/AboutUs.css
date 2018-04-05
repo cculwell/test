@@ -1,0 +1,17 @@
+/* Content Container Layout */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+/* Header Styles */
+h3 {
+  font-family: BrushScript;
+  font-size: 3em;
+  text-align: center;
+}

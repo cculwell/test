@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resources/library/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../resources/library/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="foundation/css/foundation.css">
+    <link rel="stylesheet" href="../resources/library/DataTables/datatables.css">
+    <link rel="stylesheet" href="../resources/library/timepicker/jquery.timepicker.css">
+    <style>
+        td.hidden {display: none;}
+        .div_pop_dt{
+            display: none;
+        }
+        .top-buffer { margin-top:20px; }
+    </style>
+
+    <script src="foundation/js/vendor/jquery.js"></script>
+    <script src="../resources/library/bootstrap/js/bootstrap.js"></script>
+    <script src="../resources/library/jquery-ui/jquery-ui.js"></script>
+    <script src="../resources/library/DataTables/datatables.js"></script>
+    <script src="../resources/library/DataTables/Select/js/dataTables.select.min.js"></script>
+    <script src="../resources/library/timepicker/jquery.timepicker.js"></script>
+
+    <title>In-Service Calendar Admin Page</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+</head>
+<body>
+
+<div class=" callout large">
+    <div class="row column text-center">
+        <img id="logo" src="img/Logo.jpg" width="30%" height="30%" alt="" />
+    </div>
+</div>
+<div class="container">
+
+    <div id="PendingQueue" class="panel panel-primary" >
+        <div class="panel-heading">
+            <h3 class="text-center">Reservation Admin Page</h3>
+        </div><br>
+        <div class="text-center" id="sign_in_button">
+            <button class="btn-lg btn-primary text-center" onclick="sign_in()">Sign On</button>
+            <br><br><br>
+
+        </div>
+        <div id="signoff_button" style="display: none" class="text-center">
+            <p>You are using the wrong gmail account</p>
+            <p>Please Sign off and sign in to the Inservice gmail account</p><br>
+            <button class="btn-lg btn-danger" onclick="sign_off()">Sign Off</button>
+            <br><br>
+        </div>
+
+        <div class="panel-body" style="display: none" id="main_panel">
+
+            <button class="btn btn-danger pull-right"  onclick="sign_off()">Sign Off</button>
+            <div id="reservationQueue">
+                <script>
+                    //This will load to the CalendarAdmin.php PHP file
+                    //The PHP file will also load Edit_Form.php
+                    $('#reservationQueue').load('php/CalendarAdmin.php');
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script async defer src="https://apis.google.com/js/api.js"
+        onload="this.onload=function(){};handleClientLoad()"
+        onreadystatechange="if (this.readyState === 'complete') this.onload()">
+</script>
+<script src="js/CalendarAdmin.js"></script>
+</html>

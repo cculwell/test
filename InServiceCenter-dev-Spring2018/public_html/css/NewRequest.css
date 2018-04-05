@@ -1,0 +1,8 @@
+.panel-body {
+    background:#dcdcdc;}
+
+.top-buffer { margin-top:20px; }
+
+.ui-timepicker-disabled { display: none; }
+
+select { width: 275px }

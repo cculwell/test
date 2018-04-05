@@ -1,0 +1,32 @@
+/* Building | Reservation Information */
+.reservation-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.reservation-info img {
+  border: 3px solid #fff;
+}
+
+.reservation-info h2 {
+  font-family: brushscript;
+  background-color: lightgray;
+}
+
+@media screen and (min-width: 64em) {
+  .reservation-info {
+    flex-direction: row-reverse;
+  }
+
+  .reservation-info h2 {
+    text-align: center;
+  }
+
+  .reservation-info div {
+    max-width: 500px;
+    padding-right: 25px;
+  }
+}

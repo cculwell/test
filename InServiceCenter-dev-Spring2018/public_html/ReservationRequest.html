@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>Request a Reservation | AMSTI</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../resources/library/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../resources/library/jquery-ui/jquery-ui.css">
+  <link rel="stylesheet" href="../resources/library/timepicker/jquery.timepicker.css">
+  <link rel="stylesheet" type="text/css" href="../resources/library/realperson-2.0.1/jquery.realperson.css">
+  <link rel="stylesheet" href="css/Common.css">
+  <link rel="stylesheet" href="css/ReservationStyle.css">
+</head>
+
+<body>
+
+  <div class="callout large">
+    <div class="row column text-center">
+      <img id="logo" src="img/Logo.jpg" alt="Logo Image" />
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Side Menu -->
+    <ul id=menu>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="AboutUs.html">AMSTI</a></li>
+      <li><a href="ARI.html">ARI</a></li>
+      <li><a href="ASIM.html">ASIM</a></li>
+      <li><a href="TIM.html">TIM</a></li>
+      <li><a href="GoverningBoard.html">Board</a></li>
+      <li><a href="Inservice.html">Inservice</a></li>
+      <li><a href="ProDevel.html">Professional Development</a></li>
+      <li><a href="NewRequest.php">Forms</a></li>
+      <li><a href="calendar.html">Calendar</a></li>
+      <li class="current"><a href="ReservationRequest.html">Reservation</a></li>
+    </ul>
+    <!-- Mobile Menu -->
+    <ul id=mobile>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="AboutUs.html">AMSTI</a></li>
+      <li><a href="ARI.html">ARI</a></li>
+      <li><a href="ASIM.html">ASIM</a></li>
+      <li><a href="TIM.html">TIM</a></li>
+      <li><a href="GoverningBoard.html">Board</a></li>
+      <li><a href="Inservice.html">Inservice</a></li>
+      <li><a href="ProDevel.html">Professional Development</a></li>
+      <li><a href="NewRequest.php">Forms</a></li>
+      <li><a href="calendar.html">Calendar</a></li>
+      <li class="current"><a href="ReservationRequest.html">Reservation</a></li>
+    </ul>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="col-md-12 well text-center">
+          <h2>Reservation Request</h2>
+          <h3>Please Complete All Fields Before Submission</h3>
+          <form id="form_reservation">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h4>Program Information</h4>
+              </div>
+              <div class="panel-body">
+                <div class="row form-group">
+                  <div class="pull-left col-md-6 ">
+                    <label for="prgrm">Program Name:</label>
+                    <input size="35" type="text" id="prgrm" name="program" required maxlength="50">
+                  </div>
+                  <div class="col-md-6 pull-left">
+                    <label for="spncr">Sponsoring Group(s)</label>
+                    <input size="35" type="text" id="spncr" name="sponsor" required maxlength="75">
+                  </div>
+                  <br>
+                  <div class="col-lg-12">
+                    <label for="evntdesc">Describe the Event</label>
+                    <textarea id="evntdesc" class="form-control" name="evntdesc" rows="5" cols="100" required></textarea>
+                  </div>
+                  <br>
+                </div>
+              </div>
+            </div>
+            <div class="panel-primary panel">
+              <div class="panel-heading">
+                <h4>Contact Information</h4>
+              </div>
+              <div class="panel-body">
+                <div class="row form-group">
+                  <div class="col-md-4  pull-left">
+                    <label for="priresp">Contact's Name</label>
+                    <input size="25" type="text" id="priresp" name="responsible" required maxlength="75">
+                  </div>
+                  <div class="pull-left col-md-4">
+                    <label for="phn">Phone Number</label>
+                    <input type="tel" id="phn" name="phone" placeholder="(555) 555-5555" required maxlength="20">
+                  </div>
+                  <div class="col-md-4 pull-left">
+                    <label for="eml">Email</label>
+                    <input size="30" type="email" id="eml" name="email" placeholder="name@sample.com" required maxlength="50">
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="panel-primary panel">
+              <div class="panel-heading">
+                <h4>Room Reservation</h4>
+              </div>
+              <div class="panel-body">
+                <div class="form-group row">
+                  <div class="col-md-6 pull-left">
+                    <label for="location">Pick a room to reserve: </label>
+                    <select id="location" name="room" style="height: 25px; width: 200px">
+                      <option value="Room A">Room A</option>
+                      <option value="Room B">Room B</option>
+                      <option value="Room C">Room C</option>
+                      <option value="Conference">Conference</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 pull-left">
+                    <label for="numattend">Number of Attendees</label>
+                    <input type="number" id="numattend" name="attend" required>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="container col-xs-12">
+                    <div class="clearfix row">
+                      <div class="col-md-12">
+                        <table class="table table-bordered table-hover">
+                          <thead>
+                            <th class="text-center">#</th>
+                            <th class="text-center">Date</th>
+                            <th class="text-center">Start Time</th>
+                            <th class="text-center">End Time</th>
+                            <th class="text-center">Pre Time(Time Before Event)</th>
+                          </thead>
+                          <tbody id="table_body">
+                            <tr id="add_row0">
+                              <td>1</td>
+                              <td>
+                                <input type="text" name="requesteddatefrom0" class="form-control datepicker" placeholder="MM/DD/YYYY" required date/>
+                              </td>
+                              <td>
+                                <input type="text" class="timepicker form-control" name="starttime0" placeholder="HH:MM AM/PM" required/>
+                              </td>
+                              <td>
+                                <input type="text" class="timepicker form-control" name="endtime0" placeholder="HH:MM AM/PM" required>
+                              </td>
+                              <td>
+                                <input type="text" class="timepicker form-control" name="preeventsetup0" placeholder="HH:MM AM/PM" required/>
+                              </td>
+                            </tr>
+                            <tr id="add_row1"></tr>
+
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <a id="add_date_btn" class="btn btn-primary pull-left">ADD</a>
+                    <a class="btn btn-danger pull-right" id="delete_date_btn">DELETE</a>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="panel-primary panel">
+              <div class="panel-heading">
+                <h4>A/V Needs</h4>
+              </div>
+
+              <div class="panel-body">
+                <div class="col-lg-12">
+                  <h4>
+                    <strong>A/V Needs: </strong>
+                  </h4>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" name="Smartboard" value="Smartboard">Smartboard</label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" name="projector" value="projector">Projector</label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" name="documentcamera" value="documentcamera">Document Camera</label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" name="extensioncords" value="extensioncords">Extension Cords</label>
+                </div>
+
+                <div class="pull-left col-lg-12">
+                  <label style="font-size: 20px; " for="avguy">*A/V tech needed to assist with setup?
+                    <input type="checkbox" id="avguy" name="avsetup" style="width: 30px; height: 20px; cursor: pointer" value="avsetup">
+                  </label>
+
+                  <p>*Tech is provided on an as-is-available basis. We do not employ A/V techs at our building.</p>
+                </div>
+              </div>
+            </div>
+
+            <h4>A Computer (PC) is provided in all AMSTI/InService Center rooms and most places on Athens State’s Campus. Please
+              come with your presentation on a flash drive or on Google Drive/Drop Box. **Do not plan to unhook our computer
+              or move cables.**</h4>
+            <hr>
+            <h4>The building is open from 8:00 am- 4:30 pm. All requests outside of business hours must be approved when reservation
+              is submitted. </h4>
+
+            <hr>
+            <div class="agree-check">
+              <input type="checkbox" id="agree" name="accept" value="accept" style="width: 30px; height: 20px" required>
+              <label for="agree">
+                I understand that this is a request only and does not guarantee an approved reservation. The status of my request will be
+                emailed to me once availability is determined. By submitting this document, I/We hereby agree to the Terms
+                and Conditions Listed.
+              </label>
+            </div>
+            <hr>
+            <div class="g-recaptcha" data-sitekey="6LfKuUkUAAAAAKq01-Oky8RalDcUS_oFBoeoQ_oj"></div>
+            <div class="btn-group" id="reserve">
+              <button type="button" id="form_submit" class="btn btn-primary btn-lg">Reserve</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+  <!-- Confirmation Panel-->
+  <div id="Show_Success" title="Reservation Form Sent">
+    <p>You have completed the reservation form.</p>
+  </div>
+
+  <script src="foundation/js/vendor/jquery.js"></script>
+  <script type="text/javascript" src="../resources/library/realperson-2.0.1/jquery.plugin.js"></script>
+  <script type="text/javascript" src="../resources/library/realperson-2.0.1/jquery.realperson.js"></script>
+
+  <script src="../resources/library/bootstrap/js/bootstrap.js"></script>
+  <script src="../resources/library/jquery-ui/jquery-ui.js"></script>
+  <script src="../resources/library/timepicker/jquery.timepicker.js"></script>
+  <script src="../resources/library/jquery-validation/jquery.validate.js"></script>
+  <script type="text/javascript" src="js/ReservationRequest.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+</body>
+
+</html>

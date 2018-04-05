@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | AMSTI</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/Common.css">
+</head>
+
+<body>
+  <div id="thebigone">
+    <div class="grid-container">
+      <!-- Side Menu -->
+      <ul id=menu>
+        <li class="current"><a href="Home.html">Home</a></li>
+        <li><a href="AboutUs.html">AMSTI</a></li>
+        <li><a href="ARI.html">ARI</a></li>
+        <li><a href="ASIM.html">ASIM</a></li>
+        <li><a href="TIM.html">TIM</a></li>
+        <li><a href="GoverningBoard.html">Board</a></li>
+        <li><a href="Inservice.html">Inservice</a></li>
+        <li><a href="ProDevel.html">Professional Development</a></li>
+        <li><a href="NewRequest.php">Forms</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="ReservationRequest.html">Reservation</a></li>
+      </ul>
+      <!-- Mobile Menu -->
+      <ul id=mobile>
+        <li class="current"><a href="home.html">Home</a></li>
+        <li><a href="AboutUs.html">AMSTI</a></li>
+        <li><a href="ARI.html">ARI</a></li>
+        <li><a href="ASIM.html">ASIM</a></li>
+        <li><a href="TIM.html">TIM</a></li>
+        <li><a href="GoverningBoard.html">Board</a></li>
+        <li><a href="Inservice.html">Inservice</a></li>
+        <li><a href="ProDevel.html">Professional Development</a></li>
+        <li><a href="NewRequest.php">Forms</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="ReservationRequest.html">Reservation</a></li>
+      </ul>
+
+      <div class="logo_container large">
+        <div class="row column text-center">
+          <img class="logo" src="img/Logo.jpg" alt="Athens State University Logo" />
+        </div>
+      </div>
+      <!-- This information section is located at the top for non-mobile devices -->
+      <div class="contact-info">
+        <div class="contact-row">
+          <div>
+            <p>
+              <strong>Physical Address
+                <br />
+              </strong> 1115-A Highway 31 South
+              <br /> Athens, AL 35611</p>
+          </div>
+          <div>
+            <p>
+              <strong>Mailing Address
+                <br />
+              </strong> 300 North Beaty Street
+              <br /> Athens, AL 35611</p>
+          </div>
+          <div>
+            <p>
+              <strong>Office Hours
+                <br />
+              </strong>8:00 am to 4:30 pm
+              <br /> Monday &ndash; Friday</p>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div>
+            <p>
+              <strong>Office: </strong>
+              <a href="tel:+12562166622">256.216.6622</a>
+            </p>
+          </div>
+          <div>
+            <p>
+              <strong>Fax: </strong>256.216.6623</p>
+          </div>
+          <div id="twitter">
+            <a href="https://twitter.com/AthensStateRIC" class="twitter-follow-button" data-show-count="false">Follow @AthensStateRIC</a>
+            <!-- To test locally, add http: or https: to src path. -->
+            <!-- Twitter's widgets.js is not released under an open-source license for modification or self-hosting -->
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+      </div>
+
+      <div class="reservation-info">
+        <img src="Home_Data/athensnew.jpg" alt="" />
+        <div>
+          <h2>Building / Reservation Information</h2>
+          <p>The Athens State AMSTI/In-Service Center is comprised of offices for the In-Service Center, AMSTI, ASIM, and TIM,
+            as well as the AMSTI warehouse and 3 training rooms. These rooms are available for our systems and the ALSDE
+            to host LEA professional development and meetings. Our three meeting rooms are equipped with interactive boards,
+            projectors, document cameras, and tables and chairs. The room capacities are all approximate, and are as follows.
+            Room A, located at the front of the building accommodates up to 28 people at tables and chairs. Room B, in the
+            rear of the building, will accommodate up to 32 people at tables and chairs. Room C, in the rear of the building,
+            will accommodate up to 60 at tables and chairs. Please
+            <a href="calendar.html">view the calendar for available dates</a>, and complete the form for room reservation requests.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="footer">
+        <div id="directions">
+          <form id="addressinput" action="http://maps.google.com/maps" method="get" target="_blank">
+            <input id="start" name="saddr" type="text" placeholder="Enter your location for directions" />
+            <input name="daddr" type="hidden" value="AMSTI--Athens State University RISC" />
+            <input type="submit" value="Get directions" />
+            <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+          </form>
+        </div>
+        <p id="info">Athens AMSTI &copy;
+          <script>document.write(new Date().getFullYear())</script> </p>
+      </div>
+    </div>
+</body>
+
+</html>
